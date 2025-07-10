@@ -7,6 +7,7 @@ import sqlite3
 import uuid
 import logging
 import sys
+import os
 
 # Configure logging
 logging.basicConfig(
@@ -149,4 +150,5 @@ def delete_hospital(id: str):
         return {"error": f"Failed to delete hospital with id = {id}"}
 
 if __name__ == "__main__":
-    uvicorn.run("server:app", host="127.0.0.1", port=8169, reload=True, log_level="error", access_log=False)
+    port = int(os.environ.get("PORT", 8191))
+    uvicorn.run("server:app", host="0.0.0.0", port=port, reload=True, log_level="error", access_log=False)
