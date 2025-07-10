@@ -11,6 +11,15 @@ This API is live and hosted on Render:
 
 🌐 **Base URL**: [`https://fastapi-demo-5p0z.onrender.com/`](https://fastapi-demo-5p0z.onrender.com/)
 
+> ⚠️ **Important Note about Render & SQLite**
+>
+> This application uses a SQLite database stored at `/tmp/hospitals.db`, which resides in a **temporary filesystem** provided by Render.
+>
+> Render **clears the `/tmp` directory after periods of inactivity** (typically around 10 minutes on the free tier), causing the database file to be **deleted automatically**.
+>
+> - As a result, any `GET` requests immediately after inactivity may return a **500 Internal Server Error** because the database no longer exists.
+> - You must perform a `POST` request to insert data and recreate the SQLite file before any `GET`, `PUT`, or `DELETE` operations can work again.
+
 ---
 
 ## 📌 Table of Contents
@@ -104,6 +113,15 @@ This will start the server at:
 ## 🔌 API Endpoints
 
 Base URL (Production): `https://fastapi-demo-5p0z.onrender.com/`
+
+> ⚠️ **Important Note about Render & SQLite**
+>
+> This application uses a SQLite database stored at `/tmp/hospitals.db`, which resides in a **temporary filesystem** provided by Render.
+>
+> Render **clears the `/tmp` directory after periods of inactivity** (typically around 10 minutes on the free tier), causing the database file to be **deleted automatically**.
+>
+> - As a result, any `GET` requests immediately after inactivity may return a **500 Internal Server Error** because the database no longer exists.
+> - You must perform a `POST` request to insert data and recreate the SQLite file before any `GET`, `PUT`, or `DELETE` operations can work again.
 
 ---
 
