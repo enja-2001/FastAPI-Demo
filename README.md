@@ -74,8 +74,7 @@ It's a good starter project for understanding FastAPI, working with Pydantic mod
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/<your-org-or-username>/fastapi-hospital-api.git
-cd fastapi-hospital-api
+git clone https://github.com/enja-2001/FastAPI-Demo.git
 ```
 
 ### 2. Create a Virtual Environment
