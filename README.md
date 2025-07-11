@@ -10,6 +10,9 @@
 This API is live and hosted on Render:
 
 🌐 **Base URL**: [`https://fastapi-demo-5p0z.onrender.com/`](https://fastapi-demo-5p0z.onrender.com/)
+📄 **Swagger API Docs**: [`https://fastapi-demo-5p0z.onrender.com/docs/`](https://fastapi-demo-5p0z.onrender.com/docs/)
+📄 **ReDoc**: [`https://fastapi-demo-5p0z.onrender.com/redoc/`](https://fastapi-demo-5p0z.onrender.com/redoc/)
+
 
 > ⚠️ **Important Note about Render & SQLite**
 >
